@@ -73,7 +73,7 @@ GenerateClassCluster=0
 DocumentUniqueId=UFAFHRCG
 
 [Document3]
-DocumentPath=ArduinoMegaDevBoard.BomDoc
+DocumentPath=Arduino.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -87,7 +87,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=AEDTCZXR
 
 [Configuration1]
 Name=Default Configuration
