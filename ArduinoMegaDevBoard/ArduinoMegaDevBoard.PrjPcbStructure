@@ -1,1 +1,2 @@
-Record=TopLevelDocument|FileName=Eurocard VME 3U (3.937 x 6.299 inches).schdoc
+Record=TopLevelDocument|FileName=TopSheet.SchDoc
+Record=SheetSymbol|SourceDocument=TopSheet.SchDoc|Designator=U_Arduino|SchDesignator=U_Arduino|FileName=Arduino.SchDoc|SymbolType=Normal|RawFileName=Arduino.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
