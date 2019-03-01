@@ -1,5 +1,1 @@
-Button=Button2,Button4,Button6,Button8
-FER-202=Ch8,Ch6,Ch4,Ch2
-Led=LED2,LED4,LED6,LED8
-Relais=Relais4,Relais3,Relais2,Relais1
 SerialMC=CTS3,RTS3,CTS1,RTS1,TX3,RX3,TX2,RX2,TX1,RX1
