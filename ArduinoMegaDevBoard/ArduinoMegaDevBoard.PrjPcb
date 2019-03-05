@@ -158,6 +158,40 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document8]
+DocumentPath=C:\Users\fixi\Downloads\DS1E-S-DC3V\Altium\Imported PADS Libraries.PrjPcb\DS1ESDC3V.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=NJQWVIVO
+
+[Document9]
+DocumentPath=C:\Users\fixi\Downloads\DS1E-S-DC3V\Altium\Imported PADS Libraries.PrjPcb\DS1E-S-DC3V.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=ISRKNGGZ
+
+[Document10]
 DocumentPath=ArduinoMegaDevBoard.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -174,7 +208,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document11]
 DocumentPath=Ports.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -191,7 +225,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KBCLUSLM
 
-[Document10]
+[Document12]
 DocumentPath=Eurocard VME 3U (3.937 x 6.299 inches).schdoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -208,7 +242,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UFAFHRCG
 
-[Document11]
+[Document13]
 DocumentPath=Ports.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -225,7 +259,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document12]
+[Document14]
 DocumentPath=Arduino.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
