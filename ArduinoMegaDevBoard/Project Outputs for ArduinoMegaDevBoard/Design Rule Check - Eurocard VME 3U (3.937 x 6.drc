@@ -1,0 +1,24 @@
+Protel Design System Design Rule Check
+PCB File : D:\Dokumente\GitHub\ArduinoMegaDevBoardV1\ArduinoMegaDevBoard\Eurocard VME 3U (3.937 x 6.299 inches).PCBDOC
+Date     : 18.03.2019
+Time     : 20:10:44
+
+Processing Rule : Clearance Constraint (Gap=5mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=10mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+
+Violations Detected : 0
+Waived Violations : 0
+Time Elapsed        : 00:00:00
