@@ -57,7 +57,7 @@ DocumentUniqueId=SIRMFXOJ
 
 [Document2]
 DocumentPath=Arduino.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -91,7 +91,7 @@ DocumentUniqueId=DMSKLTXU
 
 [Document4]
 DocumentPath=TopSheet.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -176,7 +176,7 @@ DocumentUniqueId=
 
 [Document9]
 DocumentPath=Ports.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -193,7 +193,7 @@ DocumentUniqueId=KBCLUSLM
 
 [Document10]
 DocumentPath=Eurocard VME 3U (3.937 x 6.299 inches).schdoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=

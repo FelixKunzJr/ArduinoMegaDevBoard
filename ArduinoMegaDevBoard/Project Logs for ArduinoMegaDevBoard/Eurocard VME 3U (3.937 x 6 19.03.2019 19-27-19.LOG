@@ -1,0 +1,16 @@
+Change Net Name : Old Net Name=NetLED7_1 New Net Name=NetLED1_1
+Change Net Name : Old Net Name=NetLED8_1 New Net Name=NetLED2_1
+Change Net Name : Old Net Name=NetLED9_1 New Net Name=NetLED3_1
+Change Net Name : Old Net Name=NetLED10_1 New Net Name=NetLED4_1
+Change Net Name : Old Net Name=NetLED11_1 New Net Name=NetLED5_1
+Change Net Name : Old Net Name=NetLED12_1 New Net Name=NetLED6_1
+Change Net Name : Old Net Name=NetLED13_1 New Net Name=NetLED7_1
+Change Net Name : Old Net Name=NetLED14_1 New Net Name=NetLED8_1
+Added Member To Class: ClassName=U_Peripherals Member=Component LED4 TX1
+Added Member To Class: ClassName=U_Serial Member=Component LED4 RX3
+Added Member To Class: ClassName=U_Arduino Member=Component R11 Res1
+Added Room: Name=U_Arduino
+Added Room: Name=U_Eurocard VME 3U (3
+Added Room: Name=U_Peripherals
+Added Room: Name=U_Ports
+Added Room: Name=U_Serial
