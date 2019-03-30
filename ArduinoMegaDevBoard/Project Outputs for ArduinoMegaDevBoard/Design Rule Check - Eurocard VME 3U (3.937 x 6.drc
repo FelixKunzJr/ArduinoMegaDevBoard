@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
-PCB File : D:\Dokumente\GitHub\ArduinoMegaDevBoardV1\ArduinoMegaDevBoard\Eurocard VME 3U (3.937 x 6.299 inches).PCBDOC
-Date     : 19.03.2019
-Time     : 19:32:43
+PCB File : C:\Users\enter.ENTER\Documents\GitHub\ArduinoMegaDevBoardV1\ArduinoMegaDevBoard\Eurocard VME 3U (3.937 x 6.299 inches).PCBDOC
+Date     : 23.03.2019
+Time     : 14:06:08
 
 Processing Rule : Clearance Constraint (Gap=5mil) (All),(All)
 Rule Violations :0
@@ -13,6 +13,7 @@ Processing Rule : Un-Routed Net Constraint ( (All) )
 Rule Violations :0
 
 Processing Rule : Width Constraint (Min=10mil) (Max=10mil) (Preferred=10mil) (All)
+   Violation between Width Constraint: Track (4000mil,3519mil)(4000mil,3619mil) on TopLayer Actual Width = 50mil, Target Width = 10mil
    Violation between Width Constraint: Track (5878.819mil,3682.992mil)(5878.819mil,3742.047mil) on TopLayer Actual Width = 5.906mil, Target Width = 10mil
    Violation between Width Constraint: Track (5878.819mil,3682.992mil)(5937.874mil,3682.992mil) on TopLayer Actual Width = 5.906mil, Target Width = 10mil
    Violation between Width Constraint: Track (5878.819mil,3742.047mil)(5878.819mil,3801.102mil) on BottomLayer Actual Width = 5.906mil, Target Width = 10mil
@@ -21,12 +22,12 @@ Processing Rule : Width Constraint (Min=10mil) (Max=10mil) (Preferred=10mil) (Al
    Violation between Width Constraint: Track (5878.819mil,3801.102mil)(5937.874mil,3801.102mil) on BottomLayer Actual Width = 5.906mil, Target Width = 10mil
    Violation between Width Constraint: Track (5937.874mil,3682.992mil)(5937.874mil,3742.047mil) on TopLayer Actual Width = 5.906mil, Target Width = 10mil
    Violation between Width Constraint: Track (5937.874mil,3742.047mil)(5937.874mil,3801.102mil) on BottomLayer Actual Width = 5.906mil, Target Width = 10mil
-Rule Violations :8
+Rule Violations :9
 
 Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
 Rule Violations :0
 
 
-Violations Detected : 8
+Violations Detected : 9
 Waived Violations : 0
 Time Elapsed        : 00:00:01
