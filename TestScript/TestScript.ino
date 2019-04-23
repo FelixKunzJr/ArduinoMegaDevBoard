@@ -49,11 +49,11 @@ void setup() {
 
   DDRA = 0xFF;
   DDRC = 0x00;
-Serial.begin(9600);  
+Serial.begin(9600);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  
-digitalWrite(i)
+
+digitalWrite(23,HIGH);
 }
