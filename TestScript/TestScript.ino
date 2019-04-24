@@ -41,19 +41,42 @@
 
 
 
+int incomingByte = 0;   // for incoming serial data
 
-
+int i = 0;
 
 void setup() {
   // put your setup code here, to run once:
 
   DDRA = 0xFF;
   DDRC = 0x00;
-Serial.begin(9600);
+  PORTA = 0xFF;
+
+
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+   i++;
+Serial1.write(13);
 
-digitalWrite(23,HIGH);
+ if (Serial.available() > 0) {
+                // read the incoming byte:
+
+                // say what you got:
+                Serial.print("I received: "); 
+                Serial.println(incomingByte, DEC);
+        }
+
+        
+
+/*
+while(i < 200) {
+
+PORTA = i;
+delay(1000);
+i=i*2;
+}
+
+*/
 }
