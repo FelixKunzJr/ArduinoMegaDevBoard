@@ -1,0 +1,32 @@
+Protel Design System Design Rule Check
+PCB File : D:\Dokumente\GitHub\ArduinoMegaDevBoardV1\ArduinoMegaDevBoard\Eurocard VME 3U (3.937 x 6.299 inches).PCBDOC
+Date     : 02.04.2019
+Time     : 23:26:26
+
+Processing Rule : Clearance Constraint (Gap=0.127mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=0.508mm) (Preferred=0.254mm) (All)
+   Violation between Width Constraint: Track (149.322mm,93.548mm)(149.322mm,95.048mm) on TopLayer Actual Width = 0.15mm, Target Width = 0.254mm
+   Violation between Width Constraint: Track (149.322mm,93.548mm)(150.822mm,93.548mm) on TopLayer Actual Width = 0.15mm, Target Width = 0.254mm
+   Violation between Width Constraint: Track (149.322mm,95.048mm)(149.322mm,96.548mm) on BottomLayer Actual Width = 0.15mm, Target Width = 0.254mm
+   Violation between Width Constraint: Track (149.322mm,95.048mm)(150.822mm,95.048mm) on BottomLayer Actual Width = 0.15mm, Target Width = 0.254mm
+   Violation between Width Constraint: Track (149.322mm,95.048mm)(150.822mm,95.048mm) on TopLayer Actual Width = 0.15mm, Target Width = 0.254mm
+   Violation between Width Constraint: Track (149.322mm,96.548mm)(150.822mm,96.548mm) on BottomLayer Actual Width = 0.15mm, Target Width = 0.254mm
+   Violation between Width Constraint: Track (150.822mm,93.548mm)(150.822mm,95.048mm) on TopLayer Actual Width = 0.15mm, Target Width = 0.254mm
+   Violation between Width Constraint: Track (150.822mm,95.048mm)(150.822mm,96.548mm) on BottomLayer Actual Width = 0.15mm, Target Width = 0.254mm
+Rule Violations :8
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+
+Violations Detected : 8
+Waived Violations : 0
+Time Elapsed        : 00:00:00
