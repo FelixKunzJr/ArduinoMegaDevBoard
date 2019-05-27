@@ -1,9 +1,9 @@
 Protel Design System Design Rule Check
-PCB File : D:\Dokumente\GitHub\ArduinoMegaDevBoardV1\ArduinoMegaDevBoard\Eurocard VME 3U (3.937 x 6.299 inches).PCBDOC
-Date     : 02.04.2019
-Time     : 23:26:26
+PCB File : D:\Dokumente\GitHub\ArduinoMegaDevBoardV1\PCB_Files\ArduinoMegaDevBoardV2\Eurocard VME 3U (3.937 x 6.299 inches).PCBDOC
+Date     : 27.05.2019
+Time     : 21:07:41
 
-Processing Rule : Clearance Constraint (Gap=0.127mm) (All),(All)
+Processing Rule : Clearance Constraint (Gap=5mil) (All),(All)
 Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
@@ -12,21 +12,13 @@ Rule Violations :0
 Processing Rule : Un-Routed Net Constraint ( (All) )
 Rule Violations :0
 
-Processing Rule : Width Constraint (Min=0.254mm) (Max=0.508mm) (Preferred=0.254mm) (All)
-   Violation between Width Constraint: Track (149.322mm,93.548mm)(149.322mm,95.048mm) on TopLayer Actual Width = 0.15mm, Target Width = 0.254mm
-   Violation between Width Constraint: Track (149.322mm,93.548mm)(150.822mm,93.548mm) on TopLayer Actual Width = 0.15mm, Target Width = 0.254mm
-   Violation between Width Constraint: Track (149.322mm,95.048mm)(149.322mm,96.548mm) on BottomLayer Actual Width = 0.15mm, Target Width = 0.254mm
-   Violation between Width Constraint: Track (149.322mm,95.048mm)(150.822mm,95.048mm) on BottomLayer Actual Width = 0.15mm, Target Width = 0.254mm
-   Violation between Width Constraint: Track (149.322mm,95.048mm)(150.822mm,95.048mm) on TopLayer Actual Width = 0.15mm, Target Width = 0.254mm
-   Violation between Width Constraint: Track (149.322mm,96.548mm)(150.822mm,96.548mm) on BottomLayer Actual Width = 0.15mm, Target Width = 0.254mm
-   Violation between Width Constraint: Track (150.822mm,93.548mm)(150.822mm,95.048mm) on TopLayer Actual Width = 0.15mm, Target Width = 0.254mm
-   Violation between Width Constraint: Track (150.822mm,95.048mm)(150.822mm,96.548mm) on BottomLayer Actual Width = 0.15mm, Target Width = 0.254mm
-Rule Violations :8
+Processing Rule : Width Constraint (Min=10mil) (Max=20mil) (Preferred=10mil) (All)
+Rule Violations :0
 
-Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
 Rule Violations :0
 
 
-Violations Detected : 8
+Violations Detected : 0
 Waived Violations : 0
 Time Elapsed        : 00:00:00

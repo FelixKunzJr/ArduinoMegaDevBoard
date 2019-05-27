@@ -1,0 +1,100 @@
+Removed Pin From Net: NetName=NetCBUS1_1 Pin=R5-2
+Removed Pin From Net: NetName=NetCBUS2_1 Pin=R8-2
+Removed Pin From Net: NetName=NetCBUS2_1 Pin=U3-22
+Removed Pin From Net: NetName=NetCBUS1_1 Pin=U3-23
+Removed Member From Class: ClassName=U_Serial Member=#CTS1
+Removed Member From Class: ClassName=U_Serial Member=#DCD1
+Removed Member From Class: ClassName=U_Serial Member=#DSR1
+Removed Member From Class: ClassName=U_Serial Member=#DTR1
+Removed Member From Class: ClassName=U_Serial Member=#RESET1
+Removed Member From Class: ClassName=U_Serial Member=#RI1
+Removed Member From Class: ClassName=U_Serial Member=#RTS1
+Change Component Footprint: Designator=CBUS1 Old Footprint=KSTN-5011_V New Footprint=Testpunkt
+Change Component Footprint: Designator=CBUS2 Old Footprint=KSTN-5011_V New Footprint=Testpunkt
+Change Component Footprint: Designator=CBUS3 Old Footprint=KSTN-5011_V New Footprint=Testpunkt
+Change Component Footprint: Designator=CBUS4 Old Footprint=KSTN-5011_V New Footprint=Testpunkt
+Change Component Comment : Designator=CBUS1 Old Comment=5011 New Comment=Testpunkt
+Change Component Comment : Designator=CBUS2 Old Comment=5011 New Comment=Testpunkt
+Change Component Comment : Designator=CBUS3 Old Comment=5011 New Comment=Testpunkt
+Change Component Comment : Designator=CBUS4 Old Comment=5011 New Comment=Testpunkt
+Change component parameters: Designator = "CBUS1"; Footprint = "Testpunkt"; UniqueID = "\BWWTMROI\CXFTKNMF"
+Change component parameters. Clean all parameters for all variants
+Change component parameters: Designator = "CBUS2"; Footprint = "Testpunkt"; UniqueID = "\BWWTMROI\WUAFYVJN"
+Change component parameters. Clean all parameters for all variants
+Change component parameters: Designator = "CBUS3"; Footprint = "Testpunkt"; UniqueID = "\BWWTMROI\ZEKXDDRT"
+Change component parameters. Clean all parameters for all variants
+Change component parameters: Designator = "CBUS4"; Footprint = "Testpunkt"; UniqueID = "\BWWTMROI\NERGIUWU"
+Change component parameters. Clean all parameters for all variants
+Added Component: Designator=#CTS(Testpunkt)
+Add component. Clean all parameters for all variants
+Added Component: Designator=#DCD(Testpunkt)
+Add component. Clean all parameters for all variants
+Added Component: Designator=#DSR(Testpunkt)
+Add component. Clean all parameters for all variants
+Added Component: Designator=#DTR(Testpunkt)
+Add component. Clean all parameters for all variants
+Added Component: Designator=#RESET(Testpunkt)
+Add component. Clean all parameters for all variants
+Added Component: Designator=#RI(Testpunkt)
+Add component. Clean all parameters for all variants
+Added Component: Designator=#RTS(Testpunkt)
+Add component. Clean all parameters for all variants
+Added Component: Designator=CBUS0(Testpunkt)
+Add component. Clean all parameters for all variants
+Added Component: Designator=OSCO(Testpunkt)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RXD(Testpunkt)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TXD(Testpunkt)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetR6_1 Pin=CBUS3-1
+Added Pin To Net: NetName=NetCBUS1_1 Pin=R8-2
+Added Pin To Net: NetName=NetJ12_2 Pin=RXD-1
+Added Pin To Net: NetName=NetJ10_2 Pin=TXD-1
+Added Pin To Net: NetName=NetCBUS2_1 Pin=U3-13
+Added Pin To Net: NetName=NetCBUS1_1 Pin=U3-22
+Change Net Name : Old Net Name=NetR6_1 New Net Name=NetCBUS3_1
+Added Pin To Net: NetName=Net#CTS_1 Pin=#CTS-1
+Added Pin To Net: NetName=Net#CTS_1 Pin=U3-11
+Added Net: Name=Net#CTS_1
+Added Pin To Net: NetName=Net#DCD_1 Pin=#DCD-1
+Added Pin To Net: NetName=Net#DCD_1 Pin=U3-10
+Added Net: Name=Net#DCD_1
+Added Pin To Net: NetName=Net#DSR_1 Pin=#DSR-1
+Added Pin To Net: NetName=Net#DSR_1 Pin=U3-9
+Added Net: Name=Net#DSR_1
+Added Pin To Net: NetName=Net#DTR_1 Pin=#DTR-1
+Added Pin To Net: NetName=Net#DTR_1 Pin=U3-2
+Added Net: Name=Net#DTR_1
+Added Pin To Net: NetName=Net#RESET_1 Pin=#RESET-1
+Added Pin To Net: NetName=Net#RESET_1 Pin=U3-19
+Added Net: Name=Net#RESET_1
+Added Pin To Net: NetName=Net#RI_1 Pin=#RI-1
+Added Pin To Net: NetName=Net#RI_1 Pin=U3-6
+Added Net: Name=Net#RI_1
+Added Pin To Net: NetName=Net#RTS_1 Pin=#RTS-1
+Added Pin To Net: NetName=Net#RTS_1 Pin=U3-3
+Added Net: Name=Net#RTS_1
+Added Pin To Net: NetName=NetCBUS0_1 Pin=CBUS0-1
+Added Pin To Net: NetName=NetCBUS0_1 Pin=R5-2
+Added Pin To Net: NetName=NetCBUS0_1 Pin=U3-23
+Added Net: Name=NetCBUS0_1
+Added Pin To Net: NetName=NetOSCO_1 Pin=OSCO-1
+Added Pin To Net: NetName=NetOSCO_1 Pin=U3-28
+Added Net: Name=NetOSCO_1
+Added Member To Class: ClassName=U_Serial Member=Component #CTS Testpunkt
+Added Member To Class: ClassName=U_Serial Member=Component #DCD Testpunkt
+Added Member To Class: ClassName=U_Serial Member=Component #DSR Testpunkt
+Added Member To Class: ClassName=U_Serial Member=Component #DTR Testpunkt
+Added Member To Class: ClassName=U_Serial Member=Component #RESET Testpunkt
+Added Member To Class: ClassName=U_Serial Member=Component #RI Testpunkt
+Added Member To Class: ClassName=U_Serial Member=Component #RTS Testpunkt
+Added Member To Class: ClassName=U_Serial Member=Component CBUS0 Testpunkt
+Added Member To Class: ClassName=U_Serial Member=Component OSCO Testpunkt
+Added Member To Class: ClassName=U_Serial Member=Component RXD Testpunkt
+Added Member To Class: ClassName=U_Serial Member=Component TXD Testpunkt
+Added Room: Name=U_Arduino
+Added Room: Name=U_Eurocard VME 3U (3
+Added Room: Name=U_Peripherals
+Added Room: Name=U_Ports
+Added Room: Name=U_Serial

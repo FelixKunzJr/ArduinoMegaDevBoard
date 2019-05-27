@@ -1,0 +1,4 @@
+Change Component Designator: OldDesignator=R? NewDesignator=R15
+Added Member To Class: ClassName=U_Peripherals Member=Component R11 4609X-101-103LF
+Added Member To Class: ClassName=U_Peripherals Member=Component R12 4609X-101-103LF
+Added Member To Class: ClassName=U_Peripherals Member=Component R13 220R

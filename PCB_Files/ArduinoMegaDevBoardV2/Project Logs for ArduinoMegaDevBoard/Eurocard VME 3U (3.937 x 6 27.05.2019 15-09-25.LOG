@@ -1,0 +1,95 @@
+Removed Pin From Net: NetName=VCC_5V Pin=R9-1
+Removed Pin From Net: NetName=Tactile1 Pin=R9-2
+Removed Pin From Net: NetName=Tactile2 Pin=R10-1
+Removed Pin From Net: NetName=VCC_5V Pin=R10-2
+Removed Pin From Net: NetName=GND Pin=R14-1
+Removed Pin From Net: NetName=NetP12_19 Pin=R14-2
+Removed Member From Class: ClassName=U_Peripherals Member=P10
+Removed Member From Class: ClassName=U_Peripherals Member=P11
+Change Component Footprint: Designator=R9 Old Footprint=AXIAL-0.3 New Footprint=RESC1206(3216)_M
+Change Component Footprint: Designator=R10 Old Footprint=AXIAL-0.3 New Footprint=RESC1206(3216)_M
+Change Component Footprint: Designator=R11 Old Footprint=AXIAL-0.3 New Footprint=RESC1206(3216)_M
+Change Component Footprint: Designator=R14 Old Footprint=AXIAL-0.3 New Footprint=RESC1206(3216)_M
+Change Component Footprint: Designator=LED15 Old Footprint=Type 5mm New Footprint=1206  RECTANGULAR-REVERSE USE
+Change Component Comment : Designator=LED15 Old Comment=Power New Comment=Powerled
+Change Component Comment : Designator=R9 Old Comment=Res1 New Comment=1k
+Change Component Comment : Designator=R10 Old Comment=Res1 New Comment=1k
+Change Component Comment : Designator=R14 Old Comment=Res1 New Comment=220R
+Change Component Comment : Designator=R11 Old Comment=Res1 New Comment=470R
+Change component parameters: Designator = "LED15"; Footprint = "1206  RECTANGULAR-REVERSE USE"; UniqueID = "\RCLCJSNP\SXMRDKML"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Color"; Value = "Yellow"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.com/led/datasheet/156120YS75000.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lens Type"; Value = "Rectangular"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wuerth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "1206  RECTANGULAR-REVERSE USE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PartNumber"; Value = "156120YS75000"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R9"; Footprint = "RESC1206(3216)_M"; UniqueID = "\OQHICYLA\VDJNILMV"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Case-EIA"; Value = "1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case-Metric"; Value = "3216"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "0.25 W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "470.00 Ohm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R10"; Footprint = "RESC1206(3216)_M"; UniqueID = "\OQHICYLA\VWVUWQAR"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Case-EIA"; Value = "1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case-Metric"; Value = "3216"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "0.25 W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "470.00 Ohm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R11"; Footprint = "RESC1206(3216)_M"; UniqueID = "\RCLCJSNP\VWRJMPVB"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Case-EIA"; Value = "1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case-Metric"; Value = "3216"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "0.25 W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "470.00 Ohm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R14"; Footprint = "RESC1206(3216)_M"; UniqueID = "\OQHICYLA\VEOEVEYB"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Case-EIA"; Value = "1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case-Metric"; Value = "3216"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "0.25 W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "470.00 Ohm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Tactile1 Pin=R9-1
+Added Pin To Net: NetName=VCC_5V Pin=R9-2
+Added Pin To Net: NetName=VCC_5V Pin=R10-1
+Added Pin To Net: NetName=Tactile2 Pin=R10-2
+Added Pin To Net: NetName=NetP12_19 Pin=R14-1
+Added Pin To Net: NetName=GND Pin=R14-2
+Added Member To Class: ClassName=U_Serial Member=Component C11 100nF
+Added Member To Class: ClassName=U_Serial Member=Component C12 10nF
+Added Member To Class: ClassName=U_Serial Member=Component CBUS2 5011
+Added Member To Class: ClassName=U_Serial Member=Component J2 Jumper
+Added Member To Class: ClassName=U_Serial Member=Component J3 Jumper
+Added Member To Class: ClassName=U_Serial Member=Component J10 Jumper
+Added Member To Class: ClassName=U_Serial Member=Component J11 61400416121
+Added Member To Class: ClassName=U_Serial Member=Component J12 Jumper
+Added Member To Class: ClassName=U_Serial Member=Component LED1 RX1
+Added Member To Class: ClassName=U_Serial Member=Component LED2 TX1
+Added Member To Class: ClassName=U_Serial Member=Component LED3 TX3
+Added Member To Class: ClassName=U_Serial Member=Component LED4 RX3
+Added Member To Class: ClassName=U_Serial Member=Component LED5 RX2
+Added Member To Class: ClassName=U_Serial Member=Component LED6 TX2
+Added Member To Class: ClassName=U_Peripherals Member=Component LED7 TX1
+Added Member To Class: ClassName=U_Peripherals Member=Component LED8 TX1
+Added Member To Class: ClassName=U_Peripherals Member=Component LED9 TX1
+Added Member To Class: ClassName=U_Peripherals Member=Component LED10 TX1
+Added Member To Class: ClassName=U_Peripherals Member=Component LED11 TX1
+Added Member To Class: ClassName=U_Peripherals Member=Component LED12 TX1
+Added Member To Class: ClassName=U_Peripherals Member=Component LED13 TX1
+Added Member To Class: ClassName=U_Peripherals Member=Component LED14 TX1
+Added Member To Class: ClassName=U_Peripherals Member=Component P12 Header 13X2A
+Added Member To Class: ClassName=U_Peripherals Member=Component P13 LCD
+Added Member To Class: ClassName=U_Serial Member=Component R5 470R
+Added Member To Class: ClassName=U_Serial Member=Component R8 1K
+Added Member To Class: ClassName=U_Peripherals Member=Component R13 4609X-101-103LF
+Added Member To Class: ClassName=U_Peripherals Member=Component R15 470R
