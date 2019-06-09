@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=SCL Pin=A1-SCL
+Removed Pin From Net: NetName=SDA Pin=A1-SDA
+Removed Pin From Net: NetName=SCL Pin=P1-1
+Removed Pin From Net: NetName=SDA Pin=P1-2
+Added Pin To Net: NetName=SCL2 Pin=A1-SCL
+Added Pin To Net: NetName=SCL2 Pin=P1-1
+Added Net: Name=SCL2
+Added Pin To Net: NetName=SDA2 Pin=A1-SDA
+Added Pin To Net: NetName=SDA2 Pin=P1-2
+Added Net: Name=SDA2
+Added Room: Name=U_Arduino
+Added Room: Name=U_Eurocard VME 3U (3
+Added Room: Name=U_Peripherals
+Added Room: Name=U_Ports
+Added Room: Name=U_Serial

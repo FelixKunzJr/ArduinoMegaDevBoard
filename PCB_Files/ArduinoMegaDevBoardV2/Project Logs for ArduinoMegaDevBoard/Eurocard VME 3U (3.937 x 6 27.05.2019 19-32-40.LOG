@@ -1,0 +1,33 @@
+Removed Pin From Net: NetName=AD8 Pin=J6-37
+Removed Pin From Net: NetName=AD0 Pin=J6-38
+Removed Pin From Net: NetName=AD9 Pin=J6-39
+Removed Pin From Net: NetName=AD1 Pin=J6-40
+Removed Pin From Net: NetName=AD10 Pin=J6-41
+Removed Pin From Net: NetName=AD2 Pin=J6-42
+Removed Pin From Net: NetName=AD11 Pin=J6-43
+Removed Pin From Net: NetName=AD3 Pin=J6-44
+Removed Pin From Net: NetName=AD12 Pin=J6-45
+Removed Pin From Net: NetName=AD4 Pin=J6-46
+Removed Pin From Net: NetName=LCD_E Pin=J6-47
+Removed Pin From Net: NetName=AD5 Pin=J6-48
+Removed Pin From Net: NetName=LCD RW Pin=J6-49
+Removed Pin From Net: NetName=AD6 Pin=J6-50
+Removed Pin From Net: NetName=LCD RS Pin=J6-51
+Removed Pin From Net: NetName=AD7 Pin=J6-52
+Change Component Designator: OldDesignator=LCD NewDesignator=P13
+Added Pin To Net: NetName=AD0 Pin=J6-37
+Added Pin To Net: NetName=AD1 Pin=J6-38
+Added Pin To Net: NetName=AD2 Pin=J6-39
+Added Pin To Net: NetName=AD3 Pin=J6-40
+Added Pin To Net: NetName=AD4 Pin=J6-41
+Added Pin To Net: NetName=AD5 Pin=J6-42
+Added Pin To Net: NetName=AD6 Pin=J6-43
+Added Pin To Net: NetName=AD7 Pin=J6-44
+Added Pin To Net: NetName=AD8 Pin=J6-45
+Added Pin To Net: NetName=AD9 Pin=J6-46
+Added Pin To Net: NetName=AD10 Pin=J6-47
+Added Pin To Net: NetName=AD11 Pin=J6-48
+Added Pin To Net: NetName=AD12 Pin=J6-49
+Added Pin To Net: NetName=LCD_E Pin=J6-50
+Added Pin To Net: NetName=LCD RW Pin=J6-51
+Added Pin To Net: NetName=LCD RS Pin=J6-52
