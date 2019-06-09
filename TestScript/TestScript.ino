@@ -7,18 +7,22 @@
 #define LED6 26
 #define LED7 29
 #define LED8 28           //This has to be changed in V2
-#define LEDPort PORTA
+#define LEDWrite PORTA
+#define LEDRead PINA
+#define LEDDirection DDRA
 
-//define Button
-#define Button1 37
-#define Button2 36
-#define Button3 35
-#define Button4 34
-#define Button5 33
-#define Button6 32
-#define Button7 31
-#define Button8 30
-#define ButtonPort PORTC
+//define Switch
+#define SW1 37
+#define SW2 36
+#define SW3 35
+#define SW4 34
+#define SW5 33
+#define SW6 32
+#define SW7 31
+#define SW8 30
+#define SwitchWrite PORTC
+#define SwitchRead PINC
+#define SwitchDirection DDRC
 
 
 //define FER 201
@@ -30,54 +34,60 @@
 #define Ch6 44
 #define Ch7 43
 #define Ch8 42
-#define ChPort PORTL
+#define ChWrite PORTL
+#define ChRead PINL
+#define ChDirection DDRL
 
 #define PI 40
 #define PR 41
 
 //define Tactile
-#define Tactile1 38
-#define Tactile2 39
+#define Button1 38
+#define Button2 39
 
 
 
 int incomingByte = 0;   // for incoming serial data
 
-int i = 0;
+uint8_t i = 0b00000000;
 
 void setup() {
   // put your setup code here, to run once:
 
-  DDRA = 0xFF;
-  DDRC = 0x00;
-  PORTA = 0xFF;
-
+  LEDDirection = 0xFF;
+  SwitchDirection = 0x00;
+  
+Serial.begin(9600);
+Serial1.begin(9600);
+//Serial2.begin(9600);
+Serial3.begin(9600);
 
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-   i++;
-Serial1.write(13);
 
- if (Serial.available() > 0) {
-                // read the incoming byte:
-                incomingByte = Serial.read();
+if(Serial1.available()>0) {
+  // Serial.print("Serial1");
+   Serial.println(Serial1.read(),BIN);
+   
+  }
+//Serial.print("serial");
+//Serial.println(SwitchRead);
 
-                // say what you got:
-                Serial.print("I received: "); 
-                Serial.println(incomingByte, DEC);
-        }
+//Serial2.println(SwitchRead,DEC);
 
-        
+Serial1.print(2,BIN);
 
-/*
-while(i < 200) {
+LEDWrite = SwitchRead;
 
-PORTA = i;
-delay(1000);
-i=i*2;
+if(!digitalRead(Button1)){
+  LEDWrite = 255;
 }
 
-*/
+if(!digitalRead(Button2)){
+  LEDWrite = 0;
+}
+
+
+
 }
