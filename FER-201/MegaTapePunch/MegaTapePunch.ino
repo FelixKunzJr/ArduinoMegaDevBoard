@@ -19,6 +19,32 @@
 */
 
 
+//define FER 201
+#define Ch1 49
+#define Ch2 48
+#define Ch3 47
+#define Ch4 46
+#define Ch5 45
+#define Ch6 44
+#define Ch7 43
+#define Ch8 42
+#define ChWrite PORTL
+#define ChRead PINL
+#define ChDirection DDRL
+
+#define DIP1 37
+#define DIP2 36
+#define DIP3 35
+
+#define Pi 41
+#define PR 40
+
+#define Button1 38
+#define Button2 39
+
+
+
+
 int zero = 0b00000000;
 
 int data = 0;
@@ -29,8 +55,11 @@ int storage[127][9];
 
 void setup() {
 
-  DDRA = 0b11111111; //Port direction
-  DDRC = 0b00000011; //Port direction
+pinMode(41,OUTPUT);
+pinMode(40,INPUT);
+
+  DDRL = 0b11111111; //Port direction
+  DDRC = 0b00000000; //Port direction
   DDRB = 0b00000000; //Port direction
   PORTB = 0b1111111; //Set Pullup
 
@@ -47,24 +76,36 @@ void loop() {
 
 
 
-  int JumperGraphical = !digitalRead(51);       // Mode to print serial input as graphical text
-  int JumperTerminal = !digitalRead(50);        // Mode to print serial input in ascii-format
-  int JumperButton = !digitalRead(53);          // Mode to print a given string "char st[]" as graphical text.
+  //int JumperGraphical = !digitalRead(37);       // Mode to print serial input as graphical text
+  //int JumperTerminal = !digitalRead(36);        // Mode to print serial input in ascii-format
+  //int JumperButton = !digitalRead(35);          // Mode to print a given string "char st[]" as graphical text.
 
-  if (JumperGraphical) {                      //Select modes
+
+  int ModeGraphical = !digitalRead(DIP1);       // Mode to print serial input as graphical text
+  int ModeTerminal = !digitalRead(DIP2);        // Mode to print serial input in ascii-format
+  int ModeButton = !digitalRead(DIP3);          // Mode to print a given string "char st[]" as graphical text.
+  int SkipButton = !digitalRead(Button2);
+
+  if(SkipButton) {
+    skip();
+    }
+
+  if (ModeGraphical) {                      //Select modes
+    Serial.println(digitalRead(37));
     GraphicalMode();
   }
 
 
-  if (JumperTerminal) {
+  if (ModeTerminal) {
 
     TerminalMode();
   }
 
 
-  if (JumperButton) {
-    int plot = !digitalRead(52);  // Check if button to Print is pressed
+  if (ModeButton) {
+    int plot = !digitalRead(Button1);  // Check if button to Print is pressed
     if (plot) {
+      Serial.println("ButtonPressed");
       ButtonMode();
     }
   }
@@ -85,16 +126,17 @@ int ButtonMode() {
   char st[] = "HELLO ENTER";          //String which is to be Printed
 
   int lx = sizeof(st) - 1;
-//Serial.println(lx);
+Serial.println(lx);
 
 
   for (int x = 0; x < lx; x++) {
     ascii = (int)st[x];
+    Serial.println(ascii);
     lochen(ascii);
 
 
   }
-  skip();
+  //skip();
 
 
   resetFunc();    //Reset after each finished Action to prevent Bugs
@@ -102,6 +144,7 @@ int ButtonMode() {
 }
 
 int TerminalMode() {
+  //Serial.println("TerminalMode");
   if (Serial.available() > 0) {
     data = Serial.read();           // read the incoming byte
 
@@ -111,7 +154,7 @@ int TerminalMode() {
       skip();
       data = 1;
     }
-    PORTA =  data;
+    PORTL =  data;
     fire();
   }
 
@@ -122,7 +165,7 @@ int TerminalMode() {
 
 
 int GraphicalMode() {
-
+//Serial.println("GraphicalMode");
 
 
 
@@ -141,7 +184,7 @@ int GraphicalMode() {
       goto DL;
     } else {
 
-
+Serial.println(data);
       lochen(data);
 
     }
@@ -160,7 +203,18 @@ int lochen(int value) {
   }
 
 
-  int X[7];
+  int X[9];
+
+
+  X[0] = 0;   //Get the max. 8 bytes from storage
+  X[1] = 0;
+  X[2] = 0;
+  X[3] = 0;
+  X[4] = 0;
+  X[5] = 0;
+  X[6] = 0;
+  X[7] = 0;
+  X[8] = 0;   //Gets the length from storage. It indicates how many colums are used to print a letter
 
 
   X[0] = storage[value][0];   //Get the max. 8 bytes from storage
@@ -171,30 +225,35 @@ int lochen(int value) {
   X[5] = storage[value][5];
   X[6] = storage[value][6];
   X[7] = storage[value][7];
-  X[8] = storage[value][8];   //Gets the length from storage. It indicates how many colums are used to print a letter
+  X[8] = storage[value][8];  
 
+  
+  
   exec(X);
 
 }
 
 
 
-int exec(int Byte[]) {
+int exec(int Byte[9]) {
 
-  int l = Byte[8];
+  int l = Byte[8]+1;
 
   for (int i = 0; i < l; i++) {           // Print for each column of a letter
-    PORTA = Byte[i];
+    PORTL = Byte[i];
+    Serial.println("Fire");
+    //PORTL=0b11111111;
     fire();
 
   }
 
-  PORTA = zero;
-  PORTC = 0b0000000;
+  PORTL = zero;
+  digitalWrite(PI,LOW);
+  Serial.println("PI2");
   delay(10);
-  PORTC = 0b0000010;
+  digitalWrite(PI,HIGH);
   delay(10);
-  PORTC = 0b0000000;
+  digitalWrite(PI,LOW);
 
 }
 
@@ -203,24 +262,26 @@ int exec(int Byte[]) {
 void fire() {                         //triggers the puncher and waits for the Print Ready (PR) signal.
   delay(10);
 
-  PORTC = 0b0000000;
+  digitalWrite(41,LOW);
+  
   delay(10);
-  PORTC = 0b0000010;
+  digitalWrite(41,HIGH);
+  Serial.println(PINL,BIN);
   delay(10);
-  PORTC = 0b0000000;
-  PORTA = zero;
+  digitalWrite(41,LOW);
+  PORTL = zero;
   delay(10);
 
 
 wait:
 
-  int PR = digitalRead(35);
+  int PrintReady = digitalRead(PR);
 
-  if (!PR) {
-
+  if (!PrintReady) {
+Serial.println("no PR");
     goto wait;
   }
-
+Serial.println("PR");
 
 
 }
@@ -228,9 +289,9 @@ wait:
 void skip() {                           //Function is used to print some tape to ensure all holes are outside of the machine
   for (int t = 0; t < 50; t++) {
     delay(10);
-    PORTC = 0b0000010;
+    digitalWrite(41,HIGH);
     delay(10);
-    PORTC = 0b0000000;
+    digitalWrite(41,LOW);
 
 
 
@@ -239,23 +300,25 @@ void skip() {                           //Function is used to print some tape to
 
 void space() {
   delay(10);
-  PORTA = zero;
-  PORTC = 0b0000000;
+  PORTL = zero;
+  digitalWrite(41,LOW);
   delay(10);
-  PORTC = 0b0000010;
+  digitalWrite(41,HIGH);
   delay(10);
-  PORTC = 0b0000000;
-  PORTA = zero;
+  digitalWrite(41,LOW);
+  PORTL = zero;
   delay(10);
 
 
 wait:
 
-  int PR = digitalRead(35);
-
-  if (!PR) {
+  int PrintReady = digitalRead(PR);
+  
+  if (!PrintReady) {
+    Serial.println("no PR");
     goto wait;
   }
+  Serial.println("PR");
 
 }
 
