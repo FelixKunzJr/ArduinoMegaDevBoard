@@ -47,8 +47,8 @@
 #define PR 41
 
 //define Tactile
-#define Button1 digitalRead(38)
-#define Button2 digitalRead(39)
+#define Button1 !digitalRead(38)
+#define Button2 !digitalRead(39)
 
 //define LCD
 
