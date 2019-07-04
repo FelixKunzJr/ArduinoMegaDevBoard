@@ -8,7 +8,7 @@ LiquidCrystal lcd(LCDRs, LCDEn, LCD4, LCD5, LCD6, LCD7);
 int led;
 
 void setup() {
-  Serial.begin(9600);
+  Serial2.begin(9600);
   LCDinit();
   lcd.begin(16,2);
   
@@ -19,9 +19,9 @@ void setup() {
 void loop() {
     lcd.setCursor(0,2);
 
-if( Serial.available() )       
+if( Serial2.available() )       
  { 
- led =  Serial.read(); 
+ led =  Serial2.read(); 
  lcd.print(led);
 
  }   
