@@ -1,0 +1,5 @@
+RX0/TX0 Led hinzufügen
+Alle leds gleich ausrichten
+Silkscreen aufpassen
+
+Platz bei DSUB25 connector
