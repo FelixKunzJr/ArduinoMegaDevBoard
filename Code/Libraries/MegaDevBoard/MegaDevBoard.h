@@ -2,16 +2,17 @@
 #define MegaDevBoard
 #include "Arduino.h"
 #include "LiquidCrystal.h"
+#include <Wire.h>
 
 //define LED
-#define LED1 23
-#define LED2 22
-#define LED3 25
-#define LED4 24
-#define LED5 27
-#define LED6 26
-#define LED7 29
-#define LED8 28           //This has to be changed in V2
+#define LED1 22
+#define LED2 23
+#define LED3 24
+#define LED4 25
+#define LED5 26
+#define LED6 27
+#define LED7 28
+#define LED8 29           //This has to be changed in V2
 #define LEDWrite PORTA
 #define LEDRead PINA
 #define LEDDirection DDRA

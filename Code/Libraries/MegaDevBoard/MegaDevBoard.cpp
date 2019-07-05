@@ -1,7 +1,7 @@
 #include "MegaDevBoard.h"
 #include "Arduino.h"
 #include "LiquidCrystal.h"
-
+#include <Wire.h>
 
 
 void LCDinit(){
